@@ -16,6 +16,8 @@
 		7689CF612739B44D00153B4A /* PhotoRoomKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7689CF602739B44D00153B4A /* PhotoRoomKit.xcframework */; };
 		7689CF622739B44D00153B4A /* PhotoRoomKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7689CF602739B44D00153B4A /* PhotoRoomKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7689CF6B2739CB9100153B4A /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7689CF6A2739CB9100153B4A /* ImagePicker.swift */; };
+		7689CF6E2739DA2700153B4A /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7689CF6D2739DA2700153B4A /* HomeViewModel.swift */; };
+		7689CF702739DAC000153B4A /* ImagesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7689CF6F2739DAC000153B4A /* ImagesRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,6 +45,8 @@
 		7689CF5D2739AF6900153B4A /* RemoveBackgroundService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveBackgroundService.swift; sourceTree = "<group>"; };
 		7689CF602739B44D00153B4A /* PhotoRoomKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = PhotoRoomKit.xcframework; path = Carthage/Build/PhotoRoomKit.xcframework; sourceTree = "<group>"; };
 		7689CF6A2739CB9100153B4A /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		7689CF6D2739DA2700153B4A /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		7689CF6F2739DAC000153B4A /* ImagesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +112,7 @@
 		7689CF582739AC9600153B4A /* Storage */ = {
 			isa = PBXGroup;
 			children = (
+				7689CF6F2739DAC000153B4A /* ImagesRepository.swift */,
 			);
 			path = Storage;
 			sourceTree = "<group>";
@@ -123,7 +128,7 @@
 		7689CF5A2739ACDD00153B4A /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				7689CF482739A9B600153B4A /* HomeView.swift */,
+				7689CF6C2739DA1200153B4A /* Home */,
 				7689CF6A2739CB9100153B4A /* ImagePicker.swift */,
 			);
 			path = UI;
@@ -135,6 +140,15 @@
 				7689CF602739B44D00153B4A /* PhotoRoomKit.xcframework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7689CF6C2739DA1200153B4A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				7689CF482739A9B600153B4A /* HomeView.swift */,
+				7689CF6D2739DA2700153B4A /* HomeViewModel.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,7 +222,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7689CF702739DAC000153B4A /* ImagesRepository.swift in Sources */,
 				7689CF492739A9B600153B4A /* HomeView.swift in Sources */,
+				7689CF6E2739DA2700153B4A /* HomeViewModel.swift in Sources */,
 				7689CF472739A9B600153B4A /* PhotoRoomAPIExampleApp.swift in Sources */,
 				7689CF6B2739CB9100153B4A /* ImagePicker.swift in Sources */,
 				7689CF5C2739AEAD00153B4A /* Constants.swift in Sources */,
