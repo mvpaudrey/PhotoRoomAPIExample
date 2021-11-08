@@ -15,6 +15,7 @@
 		7689CF5E2739AF6900153B4A /* RemoveBackgroundService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7689CF5D2739AF6900153B4A /* RemoveBackgroundService.swift */; };
 		7689CF612739B44D00153B4A /* PhotoRoomKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7689CF602739B44D00153B4A /* PhotoRoomKit.xcframework */; };
 		7689CF622739B44D00153B4A /* PhotoRoomKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7689CF602739B44D00153B4A /* PhotoRoomKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7689CF6B2739CB9100153B4A /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7689CF6A2739CB9100153B4A /* ImagePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -41,6 +42,7 @@
 		7689CF5B2739AEAD00153B4A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		7689CF5D2739AF6900153B4A /* RemoveBackgroundService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveBackgroundService.swift; sourceTree = "<group>"; };
 		7689CF602739B44D00153B4A /* PhotoRoomKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = PhotoRoomKit.xcframework; path = Carthage/Build/PhotoRoomKit.xcframework; sourceTree = "<group>"; };
+		7689CF6A2739CB9100153B4A /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				7689CF482739A9B600153B4A /* ContentView.swift */,
+				7689CF6A2739CB9100153B4A /* ImagePicker.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 			files = (
 				7689CF492739A9B600153B4A /* ContentView.swift in Sources */,
 				7689CF472739A9B600153B4A /* PhotoRoomAPIExampleApp.swift in Sources */,
+				7689CF6B2739CB9100153B4A /* ImagePicker.swift in Sources */,
 				7689CF5C2739AEAD00153B4A /* Constants.swift in Sources */,
 				7689CF5E2739AF6900153B4A /* RemoveBackgroundService.swift in Sources */,
 			);
@@ -342,6 +346,7 @@
 				DEVELOPMENT_TEAM = VEUVN4UK7N;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We need access to the photo library 🙏🏽";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -371,6 +376,7 @@
 				DEVELOPMENT_TEAM = VEUVN4UK7N;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We need access to the photo library 🙏🏽";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
