@@ -80,7 +80,7 @@
 			children = (
 				7689CF5B2739AEAD00153B4A /* Constants.swift */,
 				7689CF552739AC7800153B4A /* App */,
-				7689CF582739AC9600153B4A /* Models */,
+				7689CF582739AC9600153B4A /* Storage */,
 				7689CF592739ACC200153B4A /* Network */,
 				7689CF5A2739ACDD00153B4A /* UI */,
 				7689CF4A2739A9B600153B4A /* Assets.xcassets */,
@@ -105,11 +105,11 @@
 			path = App;
 			sourceTree = "<group>";
 		};
-		7689CF582739AC9600153B4A /* Models */ = {
+		7689CF582739AC9600153B4A /* Storage */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Models;
+			path = Storage;
 			sourceTree = "<group>";
 		};
 		7689CF592739ACC200153B4A /* Network */ = {
