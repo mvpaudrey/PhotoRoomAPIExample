@@ -11,7 +11,25 @@
 		7689CF492739A9B600153B4A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7689CF482739A9B600153B4A /* ContentView.swift */; };
 		7689CF4B2739A9B600153B4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7689CF4A2739A9B600153B4A /* Assets.xcassets */; };
 		7689CF4E2739A9B600153B4A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7689CF4D2739A9B600153B4A /* Preview Assets.xcassets */; };
+		7689CF5C2739AEAD00153B4A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7689CF5B2739AEAD00153B4A /* Constants.swift */; };
+		7689CF5E2739AF6900153B4A /* RemoveBackgroundService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7689CF5D2739AF6900153B4A /* RemoveBackgroundService.swift */; };
+		7689CF612739B44D00153B4A /* PhotoRoomKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7689CF602739B44D00153B4A /* PhotoRoomKit.xcframework */; };
+		7689CF622739B44D00153B4A /* PhotoRoomKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7689CF602739B44D00153B4A /* PhotoRoomKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7689CF632739B44D00153B4A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7689CF622739B44D00153B4A /* PhotoRoomKit.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		7689CF432739A9B600153B4A /* PhotoRoomAPIExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoRoomAPIExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -19,6 +37,10 @@
 		7689CF482739A9B600153B4A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7689CF4A2739A9B600153B4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7689CF4D2739A9B600153B4A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7689CF542739AC6B00153B4A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		7689CF5B2739AEAD00153B4A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		7689CF5D2739AF6900153B4A /* RemoveBackgroundService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveBackgroundService.swift; sourceTree = "<group>"; };
+		7689CF602739B44D00153B4A /* PhotoRoomKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = PhotoRoomKit.xcframework; path = Carthage/Build/PhotoRoomKit.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7689CF612739B44D00153B4A /* PhotoRoomKit.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -35,8 +58,10 @@
 		7689CF3A2739A9B600153B4A = {
 			isa = PBXGroup;
 			children = (
+				7689CF542739AC6B00153B4A /* README.md */,
 				7689CF452739A9B600153B4A /* PhotoRoomAPIExample */,
 				7689CF442739A9B600153B4A /* Products */,
+				7689CF5F2739B44D00153B4A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,8 +76,11 @@
 		7689CF452739A9B600153B4A /* PhotoRoomAPIExample */ = {
 			isa = PBXGroup;
 			children = (
-				7689CF462739A9B600153B4A /* PhotoRoomAPIExampleApp.swift */,
-				7689CF482739A9B600153B4A /* ContentView.swift */,
+				7689CF5B2739AEAD00153B4A /* Constants.swift */,
+				7689CF552739AC7800153B4A /* App */,
+				7689CF582739AC9600153B4A /* Models */,
+				7689CF592739ACC200153B4A /* Network */,
+				7689CF5A2739ACDD00153B4A /* UI */,
 				7689CF4A2739A9B600153B4A /* Assets.xcassets */,
 				7689CF4C2739A9B600153B4A /* Preview Content */,
 			);
@@ -67,6 +95,45 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		7689CF552739AC7800153B4A /* App */ = {
+			isa = PBXGroup;
+			children = (
+				7689CF462739A9B600153B4A /* PhotoRoomAPIExampleApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		7689CF582739AC9600153B4A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7689CF592739ACC200153B4A /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				7689CF5D2739AF6900153B4A /* RemoveBackgroundService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		7689CF5A2739ACDD00153B4A /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				7689CF482739A9B600153B4A /* ContentView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		7689CF5F2739B44D00153B4A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7689CF602739B44D00153B4A /* PhotoRoomKit.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,6 +144,7 @@
 				7689CF3F2739A9B600153B4A /* Sources */,
 				7689CF402739A9B600153B4A /* Frameworks */,
 				7689CF412739A9B600153B4A /* Resources */,
+				7689CF632739B44D00153B4A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -139,6 +207,8 @@
 			files = (
 				7689CF492739A9B600153B4A /* ContentView.swift in Sources */,
 				7689CF472739A9B600153B4A /* PhotoRoomAPIExampleApp.swift in Sources */,
+				7689CF5C2739AEAD00153B4A /* Constants.swift in Sources */,
+				7689CF5E2739AF6900153B4A /* RemoveBackgroundService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

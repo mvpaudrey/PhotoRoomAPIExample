@@ -1,0 +1,16 @@
+PODS:
+  - PhotoRoomKit (0.0.2)
+
+DEPENDENCIES:
+  - PhotoRoomKit (from `../../`)
+
+EXTERNAL SOURCES:
+  PhotoRoomKit:
+    :path: "../../"
+
+SPEC CHECKSUMS:
+  PhotoRoomKit: 92fce543303acefcdc6ec194108de2f1c9402cc1
+
+PODFILE CHECKSUM: 75a88f0e658c982c9ca2e49331e2562d62c6ab27
+
+COCOAPODS: 1.10.0
