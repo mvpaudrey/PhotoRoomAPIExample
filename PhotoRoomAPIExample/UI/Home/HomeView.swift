@@ -11,37 +11,23 @@ struct HomeView: View {
     
     @State private var isShowPhotoLibrary = false
     @State private var image = UIImage()
-    
+        
     @StateObject var viewModel: HomeViewModel = HomeViewModel()
     
     var body: some View {
-        VStack {
-            
-            Image(uiImage: self.image)
-                .resizable()
-                .scaledToFill()
-                .frame(minWidth: 0, maxWidth: .infinity)
-                .edgesIgnoringSafeArea(.all)
-            
-            Button(action: {
-                self.isShowPhotoLibrary = true
-            }) {
-                HStack {
-                    Image(systemName: "photo")
-                        .font(.system(size: 20))
-                    
-                    Text("Photo library")
-                        .font(.headline)
+        NavigationView {
+            PreviewView(image: $viewModel.currentImage, imageState: $viewModel.imageState, text: $viewModel.buttonText) {
+                switch viewModel.imageState {
+                case .initial:
+                    isShowPhotoLibrary = true
+                case .original:
+                    viewModel.processImage()
+                default: break
                 }
-                .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: 50)
-                .background(Color.blue)
-                .foregroundColor(.white)
-                .cornerRadius(20)
-                .padding(.horizontal)
             }
         }
         .sheet(isPresented: $isShowPhotoLibrary) {
-            ImagePicker(sourceType: .photoLibrary, selectedImage: self.$image)
+            ImagePicker(sourceType: .photoLibrary, selectedImage: $viewModel.currentImage)
         }
     }
 }
