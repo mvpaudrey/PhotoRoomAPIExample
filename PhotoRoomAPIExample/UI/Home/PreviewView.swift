@@ -40,7 +40,36 @@ struct PreviewView: View {
                         .frame(minWidth: 0, maxWidth: .infinity)
                         .edgesIgnoringSafeArea(.all)
                     if imageState == .processing {
-                        Text("Processing")
+                        ZStack {
+                            Image(uiImage: image)
+                                .resizable()
+                                .scaledToFill()
+                                .frame(minWidth: 0, maxWidth: .infinity)
+                                .edgesIgnoringSafeArea(.all)
+                                .blur(radius: 0.2)
+                            if #available(iOS 15.0, *) {
+                                VStack {
+                                    ProgressView().progressViewStyle(CircularProgressViewStyle())
+                                    Text("Processing")
+                                        .font(.title)
+                                        .fontWeight(.black)
+                                        .foregroundColor(.white)
+                                        .padding()
+                                        .background(.ultraThinMaterial)
+                                        .multilineTextAlignment(.center)
+                                }
+                            } else {
+                                VStack {
+                                    ProgressView().progressViewStyle(CircularProgressViewStyle())
+                                    Text("Processing")
+                                        .font(.title)
+                                        .fontWeight(.black)
+                                        .foregroundColor(.white)
+                                        .multilineTextAlignment(.center)
+                                }
+                            }
+
+                        }
                     }
                 }
                 
