@@ -12,6 +12,8 @@ struct HomeView: View {
     @State private var isShowPhotoLibrary = false
     @State private var image = UIImage()
     
+    @StateObject var viewModel: HomeViewModel = HomeViewModel()
+    
     var body: some View {
         VStack {
             
