@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 
+/// Handling cached processed images
 protocol ImagesRepositoryGateway {
     
     func getCachedImages() -> [UIImage]
