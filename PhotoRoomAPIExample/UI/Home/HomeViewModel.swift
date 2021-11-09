@@ -46,6 +46,7 @@ final class HomeViewModel: ObservableObject {
             if image != nil {
                 print("currentImageChanged")
                 self?.imageState = .original
+                self?.updateText()
             }
         }.store(in: &cancellables)
     }
