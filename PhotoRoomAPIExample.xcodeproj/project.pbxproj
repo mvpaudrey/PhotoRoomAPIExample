@@ -20,6 +20,8 @@
 		7689CF702739DAC000153B4A /* ImagesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7689CF6F2739DAC000153B4A /* ImagesRepository.swift */; };
 		7689CF72273A3FF100153B4A /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7689CF71273A3FF100153B4A /* PreviewView.swift */; };
 		7689CF74273A52A800153B4A /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7689CF73273A52A800153B4A /* GridView.swift */; };
+		7689CF77273AA56C00153B4A /* CachedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7689CF76273AA56C00153B4A /* CachedImage.swift */; };
+		7689CF79273AA6BB00153B4A /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7689CF78273AA6BB00153B4A /* Cache.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -51,6 +53,8 @@
 		7689CF6F2739DAC000153B4A /* ImagesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesRepository.swift; sourceTree = "<group>"; };
 		7689CF71273A3FF100153B4A /* PreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
 		7689CF73273A52A800153B4A /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
+		7689CF76273AA56C00153B4A /* CachedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachedImage.swift; sourceTree = "<group>"; };
+		7689CF78273AA6BB00153B4A /* Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +92,7 @@
 			children = (
 				7689CF5B2739AEAD00153B4A /* Constants.swift */,
 				7689CF552739AC7800153B4A /* App */,
+				7689CF75273AA55A00153B4A /* Models */,
 				7689CF582739AC9600153B4A /* Storage */,
 				7689CF592739ACC200153B4A /* Network */,
 				7689CF5A2739ACDD00153B4A /* UI */,
@@ -117,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				7689CF6F2739DAC000153B4A /* ImagesRepository.swift */,
+				7689CF78273AA6BB00153B4A /* Cache.swift */,
 			);
 			path = Storage;
 			sourceTree = "<group>";
@@ -155,6 +161,14 @@
 				7689CF73273A52A800153B4A /* GridView.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		7689CF75273AA55A00153B4A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7689CF76273AA56C00153B4A /* CachedImage.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,8 +243,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7689CF702739DAC000153B4A /* ImagesRepository.swift in Sources */,
+				7689CF77273AA56C00153B4A /* CachedImage.swift in Sources */,
 				7689CF72273A3FF100153B4A /* PreviewView.swift in Sources */,
 				7689CF492739A9B600153B4A /* HomeView.swift in Sources */,
+				7689CF79273AA6BB00153B4A /* Cache.swift in Sources */,
 				7689CF6E2739DA2700153B4A /* HomeViewModel.swift in Sources */,
 				7689CF472739A9B600153B4A /* PhotoRoomAPIExampleApp.swift in Sources */,
 				7689CF6B2739CB9100153B4A /* ImagePicker.swift in Sources */,

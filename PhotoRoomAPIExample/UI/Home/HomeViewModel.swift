@@ -17,7 +17,7 @@ enum ImageState: Equatable {
 
 final class HomeViewModel: ObservableObject {
         
-    @Published var processedPhotos: [UIImage] = []
+    @Published var cachedImages: [CachedImage] = []
     
     @Published var currentImage: UIImage?
     
