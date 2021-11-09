@@ -22,6 +22,8 @@ struct HomeView: View {
                     isShowPhotoLibrary = true
                 case .original:
                     viewModel.processImage()
+                case .processed:
+                    viewModel.resetImage()
                 default: break
                 }
             }

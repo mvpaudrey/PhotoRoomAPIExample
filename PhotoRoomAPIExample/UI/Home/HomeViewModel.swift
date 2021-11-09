@@ -46,8 +46,8 @@ final class HomeViewModel: ObservableObject {
             if image != nil {
                 print("currentImageChanged")
                 self?.imageState = .original
-                self?.updateText()
             }
+            self?.updateText()
         }.store(in: &cancellables)
     }
 
@@ -70,6 +70,11 @@ final class HomeViewModel: ObservableObject {
                     self?.updateText()
                 }.store(in: &cancellables)
         }
+    }
+    
+    func resetImage() {
+        self.imageState = .initial
+        self.currentImage = nil
     }
     
     // MARK: - UI related
